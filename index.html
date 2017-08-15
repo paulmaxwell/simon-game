@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simon Game</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/app.css">
+
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+
+	<!-- JAVASCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+
+</head>
+<body>
+
+	<audio id="greenAudio">
+		<source src="audio/simonSound1.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="redAudio">
+		<source src="audio/simonSound2.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="yellowAudio">
+		<source src="audio/simonSound3.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="blueAudio">
+		<source src="audio/simonSound4.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="wrong">
+		<source src="audio/wrong.mp3" type="audio/mpeg">
+	</audio>
+
+
+<div class="container">
+	
+	<header>
+		<div class="row">
+			<h1>Simon Game</h1>
+			<p>code by <a href="http://www.paulmaxwell.co.uk" target="_blank">Paul Maxwell</a></p>
+		</div>
+	</header>
+
+	<div class="message"><h2>Congratulations, you won!</h2></div>
+
+	<section>
+		<div class="row first">
+			<div id="green" class="col"> </div>
+			<div id="red" class="col"> </div>
+		</div>
+
+		<div class="row second">
+			<div id="yellow" class="col"> </div>
+			<div id="blue" class="col"> </div>
+		</div>
+
+		<div class="row controls">
+			<div><p id="counter">00</p></div>
+			<div class="ctrl-btns">
+				<p id="start">start</p>
+				<p id="strict">strict: OFF</p>
+			</div>
+		</div>
+	</section>
+
+</div><!-- end container -->
+
+
+
+
+
+</body>
+</html>
